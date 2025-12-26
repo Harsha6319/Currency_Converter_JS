@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter</title>
+</head>
+<body class="flex justify-center items-center h-screen">
+    <div class="" id="container">
+        <h1 id="head">Currency Converter</h1>
+
+        <form action="">
+            <div class="amount">
+                <p>Enter Amount:</p>
+                <input type="text" id="inputAmount">
+            </div>
+
+        <div class="flex items-center gap-20" id="dropDown">
+
+            <div class="from">
+                <p>From</p>
+                <div class="selectContainer flex items-center justify-center gap-1">
+                    <img src="https://flagsapi.com/US/flat/64.png" alt="" class="selectImage" id="fromImg">
+                    <select name="from" id="from">
+                        <option value="USD">USD</option>
+                    </select>
+                </div>
+            </div>
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            <div class="to">
+                <p>To</p>
+                <div class="selectContainer flex items-center justify-center gap-1">
+                    <img src="https://flagsapi.com/IN/flat/64.png" alt=" " class="selectImage" id="toImg">
+                    <select name="to" id="to">
+                        <option value="INR">INR</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="msg">1USD = 80INR</div>
+        <div class="text-center">
+            <button id="convertBtn" class="border-2 border-[#ffffff] rounded-lg" type="button">Get Exchange Rate</button>
+        </div>
+    </form>
+    </div>
+    <script src="countries.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

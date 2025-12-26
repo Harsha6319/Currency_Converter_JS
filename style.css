@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(135deg, #7d2ae8 0%, #00c4cc 100%);
+    height: 100vh;
+    width: 100vw;
+}
+#container{
+    background: rgba(255, 255, 255, 0.15); 
+  
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(0, 196, 204, 0.2); /* Subtle teal shadow */
+
+    padding: 2rem;
+    color: white;
+}
+#head{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+#inputAmount{
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.selectContainer{
+    margin-bottom: 10px;
+}
+.fa-solid{
+    font-size: 1.5rem;
+}
+select{
+    background-color: black;
+    margin: 0px;
+    border-radius: 10px;
+    height: 2rem;
+    width: 4rem;
+}
+.selectImage{
+    max-width: 3rem;
+}
+.msg{
+    text-decoration: underline;
+    margin: 10px;
+}
+#convertBtn{
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.15rem;
+    width: 50%;
+}
